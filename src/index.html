@@ -3,12 +3,13 @@
 <head>
     <title>EduLearn Website</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body >  <!-- Navbar -->
-    <div class="w-full shadow-2xl mt-2 sticky top-0 bg-white">
-        <nav class="max-w-7xl mx-auto flex justify-between items-center px-5 py-3">
-            <div class="cursor-pointer">
-                <span class="px-3 py-2 text-2xl text-blue-400 font-bold">EduLearn</span>
+<body class="box-border" >  <!-- Navbar -->
+    <div class="w-full shadow-lg sticky top-0 bg-white z-50">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center px-5 py-3 mt-1 ">
+            <div>
+               <a href="#" class="px-2 py-2 ml-0 text-2xl cursor-pointer text-blue-400 font-bold">EduLearn</a>
             </div>
 
             <!-- Links -->
@@ -23,12 +24,12 @@
 
             <!-- Buttons -->
             <div class=" md:flex space-x-4 items-center">
-                <button class="border border-gray-300 px-4 py-2 rounded-md font-bold hover:bg-orange-300">Login</button>
-                <button class="px-4 py-2 bg-blue-400 hover:bg-blue-500 text-white rounded-md font-bold">Sign Up</button>
+                <button class="border border-gray-300 px-4 py-2 rounded-md font-medium hover:bg-orange-300 cursor-pointer">Login</button>
+                <button class="px-4 py-2 bg-blue-400 hover:bg-blue-500 text-white rounded-md font-medium cursor-pointer">Sign Up</button>
             </div>
 
             <!-- Mobile Menu Icon -->
-            <div class="md:hidden cursor-pointer text-blue-500">
+            <div class="md:hidden cursor-pointer text-black">
                 <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none">
                     <path d="M20 7H4M20 12H4M20 17H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
@@ -36,129 +37,198 @@
         </nav>
     </div>
 
-     <!-- Hero section -->
-    <div class="w-full bg-gradient-to-b from-blue-50 to-white py-20">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-14">
-            
-            <!-- Left -->
-            <div class="flex-1">
-                <h1 class="text-gray-900 leading-snug md:leading-tight text-4xl md:text-5xl lg:text-6xl font-bold">
-                    Transform Your Learning Journey with 
-                    <span class="text-blue-400">Modern Education</span>
-                </h1>
-
-                <p class="text-gray-500 text-lg mt-6 mb-8 max-w-md  md:wrap-break-word">
-                    Unlock your potential with our comprehensive online learning platform. 
-                    Master new skills, advance your career, and join thousands of successful learners worldwide.
-                </p>
-
-                <!-- Buttons -->
-                <div class="flex gap-4 mb-10">
-                    <button class="text-white bg-blue-400 px-6 py-3 rounded-md font-medium hover:bg-blue-500">
-                        Start Learning Free
-                    </button>
-                    <button class="bg-white border border-gray-300 px-6 py-3 rounded-md font-bold hover:bg-orange-300">
-                        Watch Demo
-                    </button>
-                </div>
-
-                <!-- Stats -->
-                <div class="flex flex-row gap-6 max-w-md">
-                    <div class="text-center">
-                        <h3 class="text-2xl font-bold text-blue-500">50K+</h3>
-                        <p class="text-slate-500 text-sm">Active Students</p>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="text-2xl font-bold text-blue-500">200+</h3>
-                        <p class="text-slate-500 text-sm">Expert Instructors</p>
-                    </div>
-                    <div class="text-center">
-                        <h3 class="text-2xl font-bold text-blue-500">95%</h3>
-                        <p class="text-slate-500 text-sm">Success Rate</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right -->
-           <div class="flex-1 flex justify-center pl-10">
-            <img src="assets/hero-education-BwE1DUzp.jpg"
-                alt="Learning illustration"
-                class="max-w-md lg:max-w-2xl w-full h-auto  rounded-2xl shadow-2xl overflow-clip">
-    </div>
-
-
-        </div>
-    </div>
-
-    <!-- Features -->
-
-    <div>
-        <div>
-            <div>
-                <h1>text</h1>
-            </div>
-
-
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-    <!-- Pricing -->
-
-    <div>
-        <div>
-            <div>
-                <h1>Lorem ipsum dolor sit amet.</h1>
-            </div>
-
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At, assumenda?
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Testimonals -->
      
-    <div>
+        <!-- --------------------------Hero section ------------------- -->
+
+     <section class="max-w-8xl mx-auto px-6 md:px-12 lg:px-20 py-24 grid lg:grid-cols-2 gap-15 items-center bg-hero">
+    <!-- Left Column -->
+    <div class="space-y-8">
+
+      <h1 class="font-extrabold text-4xl md:text-5xl leading-tight sm:leading-snug"> Transform Your Learning Journey with 
+        <span class="md:block text-blue-400 text-4xl md:text-5xl font-bold ">Modern Education</span>
+      </h1>
+
+      <p class="text-gray-500  max-w-xl text-xl break-normal sm:leading-normal">
+        Unlock your potential with our comprehensive online learning platform. Master new skills, advance your career, and join thousands of successful learners worldwide.
+      </p>
+
+      <div class="flex flex-col sm:flex-row sm:space-x-5 space-y-5 sm:space-y-0">
+        <button class="bg-blue-400 text-white px-10 cursor-pointer py-3 rounded-md font-semibold hover:bg-blue-500 transition w-full sm:w-auto">
+            Start Learning Free
+        </button>
+        <button class="bg-white border border-gray-300 px-7 py-2 rounded-md cursor-pointer font-semibold hover:bg-orange-300 transition w-full sm:w-auto">
+            Watch Demo
+        </button>
+</div>
+
+
+      <div class="flex lg:space-x-16 space-x-9 lg:space-y-0 space-y-5 text-center  mt-16">
         <div>
-            <div>
-                <h1>text</h1>
-            </div>
+          <div class="text-blue-500 font-bold text-2xl">50K+</div>
+          <div class="text-gray-400 font-medium  mt-1">Active Students</div>
+        </div>
 
-
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
+        <div>                       
+          <div class="text-blue-500 font-bold text-2xl">200+</div>
+          <div class="text-gray-400 font-medium  mt-1">Expert Instructors</div>
         </div>
 
         <div>
-            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, consequuntur!</h2>
+          <div class="text-blue-500 font-bold text-2xl" >95%</div>
+          <div class="text-gray-400 font-medium  mt-1">Success Rate</div>
         </div>
 
+      </div>
     </div>
+
+    <!-- Right Column -->
+    <div class="flex justify-center pb-8">
+      <img
+        src="assets/hero-education-BwE1DUzp.jpg"
+        alt="Education Illustration"
+        class="rounded-2xl shadow-2xl max-w-full object-cover"
+      />
+    </div>
+  </section>
+
+
+        <!-- -----------------------Features section ----------------------->
+         <section id="features" class="max-w-8xl mx-auto px-6 md:px-12 lg:px-20 py-24 bg-white" >
+            <div class="space-y-8">
+                    <div class="text-center">
+                        <h1 class="text-3xl font-bold mb-4 lg:text-5xl ">Why Choose EduLearn?</h1>
+                        <div class="text-gray-500  max-w-2xl mx-auto text-xl  sm:leading-normal">Discover the features that make our platform the preferred choice for modern learners worldwide.</div>
+                    </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:pt-5 md:pb-5 lg:pb-0">
+                    <div class="border border-gray-300 rounded-lg  h-50 w-full   sm:w-auto hover:shadow-lg">
+
+                        <div class="flex flex-col space-y-1.5 lg:p-6 sm:px-5  sm:py-5 justify-items-start">
+                            <div class="text-4xl mb-4">
+                                   <span class="block" >🎯</span>
+                            </div>
+
+                            <div class="pt-1 ">
+                                <h3 class="font-semibold text-xl ">Interactive Learning</h3>
+                            </div>
+
+                            <div class=" pt-1 pb-2 ">
+                                 <p class="text-sm text-gray-500 whitespace-nowrap md:whitespace-normal  leading-relaxed ">Engage with hands-on projects, quizzes, and real-world applications to reinforce your understanding.</p>
+                            </div>
+
+                        </div> 
+                    </div>
+
+                    <div class="border border-gray-300 rounded-lg h-50 w-full   sm:w-auto hover:shadow-lg"></div>
+                    <div class="border border-gray-300 rounded-lg h-50 w-full   sm:w-auto hover:shadow-lg"></div>
+                    <div class="border border-gray-300 rounded-lg  h-50 w-full  sm:w-auto hover:shadow-lg"></div>
+                    <div class="border border-gray-300 rounded-lg h-50 w-full   sm:w-auto hover:shadow-lg"></div>
+                    <div class="border border-gray-300 rounded-lg h-50 w-full   sm:w-auto hover:shadow-lg"></div>
+                </div>
+            </div>
+         </section>
+
+
+         <section id="pricing" class="max-w-8xl mx-auto px-6 md:px-12 lg:px-20 py-24 bg-white">
+  <div class="space-y-8">
+    <div class="text-center">
+      <h1 class="text-3xl font-bold mb-4 lg:text-5xl">Choose Your Learning Path</h1>
+      <div class="text-gray-500 max-w-2xl mx-auto text-xl sm:leading-normal">
+        Select the perfect plan that fits your learning goals and budget. Upgrade or downgrade anytime.
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Basic Plan -->
+      <div class="rounded-lg border border-gray-200 p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+        <h3 class="text-xl font-semibold mb-2">Basic</h3>
+        <p class="text-gray-600 mb-6">Perfect for individuals starting their learning journey</p>
+        <div class="text-3xl font-bold text-blue-400 mb-6">
+          $29<span class="text-lg font-normal text-gray-700">/month</span>
+        </div>
+        <ul class="mb-8 space-y-3 text-gray-700">
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Access to 100+ courses</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Basic community support</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Mobile app access</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Progress tracking</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Certificate of completion</li>
+        </ul>
+        <button class="w-full bg-gray-200 text-gray-900 font-semibold py-3 rounded hover:bg-gray-300 transition">Get Started</button>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="rounded-lg border border-blue-300 p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300 relative bg-white">
+        <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-blue-400 text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</div>
+        <h3 class="text-xl font-semibold mb-2 text-center">Pro</h3>
+        <p class="text-gray-600 mb-6 text-center">Ideal for professionals seeking advanced skills</p>
+        <div class="text-3xl font-bold text-blue-400 mb-6 text-center">
+          $59<span class="text-lg font-normal text-gray-700">/month</span>
+        </div>
+        <ul class="mb-8 space-y-3 text-gray-700">
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Access to 500+ courses</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Priority community support</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Mobile app access</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Advanced analytics</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Verified certificates</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>1-on-1 mentorship sessions</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Offline course downloads</li>
+        </ul>
+        <button class="w-full bg-blue-400 text-white font-semibold py-3 rounded hover:bg-blue-500 transition">Get Started</button>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="rounded-lg border border-gray-200 p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+        <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+        <p class="text-gray-600 mb-6">Best for teams and organizations</p>
+        <div class="text-3xl font-bold text-blue-400 mb-6">
+          $199<span class="text-lg font-normal text-gray-700">/month</span>
+        </div>
+        <ul class="mb-8 space-y-3 text-gray-700">
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Unlimited course access</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Dedicated support manager</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Custom learning paths</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Team analytics dashboard</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Branded certificates</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Unlimited mentorship</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>API access</li>
+          <li class="flex items-center"><svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"/></svg>Custom integrations</li>
+        </ul>
+        <button class="w-full bg-gray-200 text-gray-900 font-semibold py-3 rounded hover:bg-gray-300 transition">Get Started</button>
+      </div>
+    </div>
+
+    <p class="text-center text-gray-500 text-sm mt-12">
+      All plans include a <span class="underline">30-day money-back guarantee</span>. No questions asked.
+    </p>
+  </div>
+</section>
+
+
+       <section id="features" class="max-w-8xl mx-auto px-6 md:px-12 lg:px-20 py-24 bg-white" >
+            <div class="space-y-8">
+                    <div class="text-center">
+                        <h1 class="text-3xl font-bold mb-4 lg:text-5xl ">What Our Students Say</h1>
+                        <div class="text-gray-500  max-w-2xl mx-auto text-xl  sm:leading-normal">Join thousands of successful learners who have transformed their careers with EduLearn.</div>
+                    </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:pt-5 md:pb-5 lg:pb-0">
+                    <div class="border border-gray-300 rounded-lg  h-50 w-full   sm:w-auto hover:shadow-lg">
+
+                        <div class="flex flex-col space-y-1.5 lg:p-6 sm:px-5  sm:py-5 justify-items-start">
+                           
+
+                        </div> 
+                    </div>
+
+                    <div class="border border-gray-300 rounded-lg h-50 w-full   sm:w-auto hover:shadow-lg"></div>
+                    <div class="border border-gray-300 rounded-lg h-50 w-full   sm:w-auto hover:shadow-lg"></div>
+                    <div class="border border-gray-300 rounded-lg  h-50 w-full  sm:w-auto hover:shadow-lg"></div>
+                    <div class="border border-gray-300 rounded-lg h-50 w-full   sm:w-auto hover:shadow-lg"></div>
+                    <div class="border border-gray-300 rounded-lg h-50 w-full   sm:w-auto hover:shadow-lg"></div>
+                </div>
+            </div>
+         </section>
+
+
 </body>
 </html>

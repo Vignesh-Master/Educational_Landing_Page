@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --aspect-retro: 4 / 3; 
+  --color-hero : rgb(234, 244, 254);
+}
